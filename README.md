@@ -1,4 +1,4 @@
-# Algoritmos y Estructuras de Datos con JavaScript
+# React JS - Cookbook - Kong Beer
 
 Copyright © 2023 by Anderson Josué Oroya Silva
 
