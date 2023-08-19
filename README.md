@@ -25,4 +25,3 @@ Este repositorio da soporte a lo visto en clase y ayuda a profundizar un poco m�
 1. Javascript Overview *(Un breve repaso por JavaScript)*
 2. Manipulación del DOM con Vanilla-JS
 3. Introducción a React JS
-4. Manipulación del DOM con Javascript Vanilla
