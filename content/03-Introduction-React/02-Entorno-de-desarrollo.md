@@ -4,7 +4,6 @@ Comencemos construyendo un entorno de software. Para ello, necesitaremos instala
 
 ![1692472290472](image/02-Entorno-de-desarrollo/1692472290472.png)
 
-
 > Empezar algo es hacer el 50 por ciento de ese algo que tenemos que hacer.
 >
 > -*Anónimo*
