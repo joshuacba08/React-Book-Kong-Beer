@@ -1,3 +1,5 @@
+![Portada de libro](image/README/1702061977151.png)
+
 # React JS - Cookbook - Kong Beer
 
 Copyright © 2023 by Anderson Josué Oroya Silva
