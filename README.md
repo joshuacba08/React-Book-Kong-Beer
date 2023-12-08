@@ -16,7 +16,7 @@ Fecha de publicación: 26 de Septiembre de 2023 Córdoba, Argentina
 
 ## Prefacio
 
-Tengo el agrado de crear y diseñar el contenido para mis cursos de React JS. Personalmente considero que enseñar React JS a desarrolladores Frontend en formación es algo que aporta mucho al crecimiento de dicho perfil profesional. Durante mis años como profesor de desarrollo web he visto más de una vez que aprender esta librería UI de JavaScript supone muchos desafíos para mis estudiante. Este libro es una recopilación de las experiencias ganadas enseñando y aprendiendo React JS.
+Tengo el agrado de crear y diseñar el contenido para mis cursos de React JS. Personalmente considero que enseñar React JS a desarrolladores Frontend en formación es algo que aporta mucho al crecimiento de dicho perfil profesional. Durante mis años como profesor de desarrollo web he visto más de una vez que aprender esta librería UI de JavaScript supone muchos desafíos para mis estudiantes. Este libro es una recopilación de las experiencias ganadas enseñando y aprendiendo React JS.
 
 El objetivo de este libro/curso es aprender todos los aspectos de la API de React JS y aplicarlos en un proyecto de ejemplo llamado Kong Beer, esta es una página de eCommerce ficticia que vende cervezas 🍻. Al final de este camino, podrás llevar estos conocimientos a otros tipos de proyectos usando React JS.
 
