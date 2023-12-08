@@ -14,7 +14,7 @@ Como sabrás JavaScript es un lenguaje que nació en el navegador, digamos que d
 
 Fue un 27 de mayo de 2009 cuando entra en acción Node.js, hasta antes de eso JavaScript no podía ser tomando en cuenta como un lenguaje que se pudiera ejecutar en una máquina como una aplicación independiente. Este gran hecho abrió muchas posibilidades a los desarrolladores de JavaScript, quienes de pronto podrían desempeñar un papel importante en el backend de una aplicación Web.
 
-Si es que ya tienes instalado Node.js en tu computadora, puedes adelantarte a este paso siempre y cuando cuentes con la versión 16 en adelante. Para saber si ya cuentas con Node.js en tu computadora y corroborar la versión, puedes abrir tu terminal de comandos y tipear:
+Si es que ya tienes instalado Node.js en tu computadora, puedes adelantarte a este paso siempre y cuando cuentes con la versión 18 en adelante. Para saber si ya cuentas con Node.js en tu computadora y corroborar la versión, puedes abrir tu terminal de comandos y tipear:
 
 ```shell
 node --version

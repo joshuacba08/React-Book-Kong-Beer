@@ -12,7 +12,7 @@ No es un secreto que hoy en día existen muchas bibliotecas y frameworks para de
 
 ## Creando un proyecto con React
 
-En este capítulo, crearemos un proyecto de React desde cero. Generalmente se recomienda usar una CLI (Command Line Interface) para crear un proyecto de React llamada [Create React App](https://create-react-app.dev/). Sin embargo, esta herramienta resulta muy lenta y pesada, por lo que en este curso crearemos nuestro proyecto con [Vite](https://vitejs.dev/), una herramienta que nos permite crear proyectos de React de forma rápida y sencilla.
+En este capítulo, crearemos un proyecto de React desde cero. Generalmente se recomienda usar una CLI (Command Line Interface) para crear un proyecto de React llamada [Create React App](https://create-react-app.dev/). Sin embargo, esta herramienta resulta muy lenta y pesada, por lo que en este curso crearemos nuestro proyecto con [Vite](https://vitejs.dev/), una herramienta que nos permite crear proyectos de React de forma rápida y sencilla. Cabe destacar que incluso actualmente la documentación oficial de React JS recomienda el uso de Vite.
 
 ### Vite JS:
 
@@ -47,12 +47,12 @@ Select a framework: react
 Elegiremos también el lenguaje de programación que usaremos:
 
 ```bash
-Select a variant: javascript
+Select a variant: javascript + SWC
 ```
 
 Tendremos que ver algo así:
 
-![1692560481015](image/03-React/1692560481015.png)
+![1701871024962](image/03-React/1701871024962.png)
 
 Como resultado final veremos las siguientes indicaciones:
 
@@ -102,7 +102,36 @@ Por otro lado, si abrimos nuestro proyecto en VS Code, veremos la siguiente estr
 
 ![1692560820106](image/03-React/1692560820106.png)
 
-
 ¡Perfecto! Ya tenemos nuestro proyecto de React listo para empezar a trabajar.
 
-Kong Beer es una aplicación que nos permitirá comprar cervezas ficticias. A continuación, empezaremos a trabajar en la interfaz de usuario de la aplicación.
+Kong Beer es una aplicación que nos permitirá comprar cervezas ficticias. En el siguiente apartado empezaremos a trabajar en la interfaz de usuario de la aplicación.
+
+
+
+## Algunas aclaraciones:
+
+### ¿Qué es SWC?
+
+SWC es un compilador de JavaScript/TypeScript escrito en Rust. Fue creado para reemplazar a Babel, ya que es mucho más rápido y eficiente. Vite.js utiliza SWC para compilar el código de JavaScript/TypeScript.
+
+#### ¿Qué ventajas y desventajas tiene SWC?
+
+##### Ventajas:
+
+- Es mucho más rápido que Babel.
+- Es mucho más eficiente que Babel.
+- Es compatible con Babel.
+- Es compatible con TypeScript.
+
+##### Desventajas:
+
+- No es compatible con todas las configuraciones de Babel.
+- No es compatible con todas las configuraciones de TypeScript.
+- No es compatible con todas las configuraciones de Webpack.
+
+#### Conclusiones:
+
+- SWC es mucho más rápido y eficiente que Babel.
+- SWC es compatible con Babel y TypeScript.
+- SWC no es compatible con todas las configuraciones de Babel, TypeScript y Webpack.
+- SWC es la mejor opción para compilar código de JavaScript/TypeScript en Vite.js.
