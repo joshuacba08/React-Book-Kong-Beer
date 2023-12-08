@@ -102,4 +102,16 @@ También puedes ver este código en StackBlitz haciendo click [aquí](https://st
 
 **Nota:** Si no estás familiarizado con la manipulación del DOM con JavaScript, te recomiendo ver el capítulo 2 de este libro: `02-DOM-Vanilla-JS`.
 
+## Virtual DOM
+
+Como mencionamos en su momento en el capítulo `02-DOM-Vanilla-JS`, el DOM es una representación de la estructura de nuestro documento HTML. Cuando el navegador interpreta nuestro código HTML, crea una representación de este en memoria. Esta representación es la que se conoce como DOM.
+
+Si hacemos memoria, para crear un elemento en el DOM con JavaScript, debemos hacer lo siguiente:
+
+```js
+const element = document.createElement("h1");
+element.textContent = "Hello, world!";
+```
+
+
 
