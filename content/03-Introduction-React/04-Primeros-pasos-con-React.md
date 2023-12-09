@@ -105,9 +105,115 @@ También puedes ver este código en StackBlitz haciendo click [aquí](https://st
 
 Como mencionamos en su momento en el capítulo 2, sección `02-DOM-Vanilla-JS`, el DOM es una representación de la estructura de nuestro documento HTML. Cuando el navegador interpreta nuestro código HTML, crea una representación de este en memoria. Esta representación es la que se conoce como DOM.
 
-Si hacemos memoria, para crear un elemento en el DOM con JavaScript, debemos hacer lo siguiente:
+Cuando usamos React, no estamos manipulando directamente el DOM. En su lugar, estamos manipulando una representación de este que se conoce como Virtual DOM. Esta representación es una copia del DOM que se encuentra en memoria. Cuando hacemos cambios en el Virtual DOM, React se encarga de actualizar el DOM.
 
-```js
-const element = document.createElement("h1");
-element.textContent = "Hello, world!";
+
+![1702096005829](image/04-Primeros-pasos-con-React/1702096005829.png)
+
+
+Como se puede apreciar en la imagen, a través del método `render` de `root`, enviamos el elemento `MyApp` al Virtual DOM. Luego, React se encarga de actualizar el DOM con los cambios que se hayan realizado en el Virtual DOM.
+
+Básicamente, enviaremos elementos que en adelante llamaremos componentes al Virtual DOM. Estos componentes serán funciones que retornen elementos de React. Por ejemplo, el componente `MyApp` que creamos anteriormente es una función que retorna un elemento `h1` con el texto `Hello, world!`. 
+
+
+## Actividad: Crear un componente Button
+
+Ahora, crearemos un componente llamado `Button` que renderice un botón en el navegador. Para ello, crearemos una función llamada `Button` que retorne un elemento `button` con el texto `Click me!`. Luego, renderizaremos este componente en el navegador.
+
+Para ello, añadiremos el siguiente código dentro de la etiqueta `script` de nuestro `index.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pure React</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyApp() {
+        return <h1>Hello, world!</h1>;
+      }
+
+      function Button() {
+        return <button>Click me!</button>;
+      }
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+      root.render(<Button />);
+    </script>
+  </body>
+</html>
 ```
+
+Como puedes ver, hemos creado una función llamada `Button` que retorna un elemento `button` con el texto `Click me!`. Luego, hemos renderizado este componente en el navegador a través del método `render` de `root`.
+
+Si abrimos nuestro navegador con el archivo `index.html` veremos lo siguiente:
+
+![1702099332004](image/04-Primeros-pasos-con-React/1702099332004.png)
+
+Y es que, como puedes ver, hemos renderizado el componente `Button` en el navegador. Sin embargo, no hemos renderizado el componente `MyApp`. Esto se debe a que, cuando llamamos al método `render` de `root` por segunda vez, este reemplaza el elemento anterior por el nuevo elemento que le pasamos como parámetro.
+
+Para solucionar este problema, podemos crear un componente que contenga a ambos componentes. Por ejemplo, podemos crear un componente llamado `App` que contenga a los componentes `MyApp` y `Button`. Para ello, añadiremos el siguiente código dentro de la etiqueta `script` de nuestro `index.html`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pure React</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyApp() {
+        return <h1>Hello, world!</h1>;
+      }
+
+      function Button() {
+        return <button>Click me!</button>;
+      }
+
+      function App() {
+        return (
+          <div>
+            <MyApp />
+            <Button />
+          </div>
+        );
+      }
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+
+</html>
+```
+
+Como puedes ver, hemos creado una función llamada `App` que retorna un elemento `div` que contiene a los componentes `MyApp` y `Button`. Luego, hemos renderizado este componente en el navegador a través del método `render` de `root`.
+
+Si abrimos nuestro navegador con el archivo `index.html` veremos lo siguiente:
+
+![1702099446634](image/04-Primeros-pasos-con-React/1702099446634.png)
+
+
+## Conclusiones
+
+En este capítulo hemos aprendido cómo funciona React en el navegador. Hemos aprendido que React no manipula directamente el DOM, sino que lo hace a través de una representación de este que se conoce como Virtual DOM. También hemos aprendido que podemos renderizar elementos de React en el navegador a través de `ReactDOM.render(element, container)` o `ReactDOM.createRoot(container).render(element)`.
+
+En la próxima sección, aprenderemos a usar JSX para crear elementos de React de una forma más sencilla usando la estructura que previamente armamos con Vite.js en la sección anterior.
