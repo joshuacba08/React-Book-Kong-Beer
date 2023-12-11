@@ -37,7 +37,7 @@ JSX es una extensión de JavaScript, por lo tanto, lo que veamos que se parezca 
 
 En JSX, se usa `className` en lugar de `class` para definir clases CSS, esto se debe a que class es una palabra reservada en JavaScript para crear clases (Recordemos que JavaScript es un lenguaje orientado a objetos).
 
-###### Ejemplo
+**Ejemplo:**
 
 ```jsx
 const element = <h1 className="greeting">Hello, world!</h1>;
@@ -47,14 +47,42 @@ const element = <h1 className="greeting">Hello, world!</h1>;
 
 Podemos usar expresiones de JavaScript dentro de JSX, para esto debemos encerrarlas entre llaves `{}`.
 
-###### Ejemplo
+**Ejemplo:**
 
 ```jsx
-const name = 'Josh Perez';
+const name = "Josh Perez";
 const element = <h1>Hello, {name}</h1>;
 ```
 
 Si renderizamos este elemento en el DOM, el contenido de la etiqueta `<h1>` será `Hello, Josh Perez`. Esto se debe a que dentro del XML podemos usar expresiones de JavaScript (una expresion de Javascript es todo aquello que se puede evaluar y que devuelve un valor como variables, operaciones aritméticas, operaciones lógicas, funciones, estructuras de datos, etc.).
+
+#### Estilos en línea
+
+Podemos usar estilos en línea en JSX, para esto debemos usar un objeto de JavaScript para definir los estilos. Los nombres de las propiedades CSS deben estar en camelCase.
+
+**Ejemplo:**
+
+```jsx
+const element = <div style={{ color: "blue", backgroundColor: "#000000" }}>Hello, world!</div>;
+```
+
+Como se puede ver, usamos un objeto de JavaScript para definir los estilos, y los nombres de las propiedades CSS están en camelCase.
+
+#### Comentarios
+
+Podemos usar comentarios en JSX, para esto debemos encerrarlos entre llaves `{}`.
+
+**Ejemplo:**
+
+```jsx
+const element = (
+  <div>
+    {/* Comentario */}
+    <h1>Hello, world!</h1>
+  </div>
+);
+```
+
 
 **Nota:** JSX no es un requisito para usar React. Es posible escribir código React sin JSX, pero la mayoría de las personas lo encuentran útil como ayuda visual cuando trabajan con interfaces de usuario dentro del código JavaScript. También permite a React mostrar mensajes de error y advertencias más útiles.
 
@@ -67,18 +95,10 @@ Vamos a crear un componente con JSX para aplicar lo recientemente aprendido. Par
 
 ```jsx
 const Button = () => {
-  return (
-    <button className="button">
-      Click me!
-    </button>
-  );
+  return <button className="button">Click me!</button>;
 };
 
 export default Button;
 ```
 
 Cómo se puede apreciar, tendremos una función que retorna un elemento JSX. En este caso, el elemento JSX es un botón con una clase CSS llamada `button` y un texto que dice `Click me!`.
-
-
-
-
