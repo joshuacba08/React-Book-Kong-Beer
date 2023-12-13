@@ -14,3 +14,13 @@ No está por demás citar esta dicho:
 
 En la imagen anterior podemos ver un ejemplo de cómo se vería una aplicación React en su forma más básica. En este caso, tenemos un componente `App` que contiene 3 componentes, <Navbar />, <Home /> y <Footer />. A su vez el componente <Home /> contiene 2 grupos de componentes, un <Banner /> y unos componentes <Card /> representado cards de productos.
 
+
+## Árbol de componentes
+
+En React, los componentes se organizan en un árbol jerárquico. Esto significa que cada componente puede tener cero o más componentes hijos.
+
+Una forma muy sencilla de representar un árbol de componentes es con un diagrama de flujo. En el siguiente diagrama podemos ver un ejemplo de cómo se vería un árbol de componentes en React.
+
+![1702427351875](image/02-Components/1702427351875.png)
+
+No es necesario que comprendas todos los componentes que aparecen en el diagrama, pero sí es importante que entiendas la estructura del árbol de componentes.
