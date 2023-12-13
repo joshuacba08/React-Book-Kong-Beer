@@ -165,4 +165,4 @@ También definimos algunos estilos globales, como por ejemplo, la fuente que vam
 
 Ahora sí, ya tenemos nuestro proyecto limpio y listo para empezar a trabajar. En la siguiente sección empezaremos a trabajar en la interfaz de usuario de la aplicación creando nuestros primeros componentes.
 
-Podés visualizar el código de este capítulo en la versión [01-init-proyect](https://github.com/joshuacba08/kong-beer-react-book-project/releases/tag/Version) del proyecto Kong Beer en el siguiente enlace:
+Podés visualizar el código inicial de este capítulo en la versión [01-init-proyect](https://github.com/joshuacba08/kong-beer-react-book-project/releases/tag/Version) del proyecto Kong Beer.
