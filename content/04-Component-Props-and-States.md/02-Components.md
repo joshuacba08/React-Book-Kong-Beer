@@ -24,3 +24,20 @@ Una forma muy sencilla de representar un árbol de componentes es con un diagram
 ![1702427351875](image/02-Components/1702427351875.png)
 
 No es necesario que comprendas todos los componentes que aparecen en el diagrama, pero sí es importante que entiendas la estructura del árbol de componentes.
+
+## Anatomía de un componente
+
+Cómo mencionamos anteriormente, los componentes son como funciones de JavaScript que aceptan entradas arbitrarias (Props) y devuelven Elementos React que describen lo que debe mostrarse en la pantalla.
+
+En React, tenemos dos formas de crear componentes: **funcionales** y **de clase**. En este capítulo veremos por única vez los componentes de clase, pero a partir del siguiente capítulo nos enfocaremos solo en los componentes funcionales.
+
+### Componentes de clase
+
+Los componentes de clase son la forma más antigua de crear componentes en React. Aunque aún se pueden usar, no es recomendable hacerlo, ya que los componentes funcionales son más simples y fáciles de usar.
+
+Para crear un componente de clase, debemos crear una clase que extienda de `React.Component`. Esta clase debe tener un método `render()` que devuelva un elemento React.
+
+#### Ejemplo de componente Button
+```jsx
+
+
