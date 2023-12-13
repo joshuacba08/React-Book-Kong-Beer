@@ -119,6 +119,7 @@ Ahora que tenemos nuestro proyecto limpio, vamos a definir algunos estilos globa
   --error-color: #d8000c;
   --info-color: #31708f;
   --just-white: #ffffff;
+  --just-black: #000000;
 }
 
 
@@ -161,7 +162,6 @@ ul {
 Como podemos ver, en este archivo definimos algunas variables globales de css, como por ejemplo, las fuentes que vamos a usar en la aplicación y algunos colores que vamos a usar en la aplicación.
 
 También definimos algunos estilos globales, como por ejemplo, la fuente que vamos a usar en toda la aplicación, el color de fondo del body, el color de texto del body, etc. Además, también definimos algunos estilos de reseteo, la apariencia de un botón, de un enlace, de una lista, etc., las vamos a sacar de la aplicación y más adelante definiremos estilos específicos para cada uno de estos elementos.
-
 
 Ahora sí, ya tenemos nuestro proyecto limpio y listo para empezar a trabajar. En la siguiente sección empezaremos a trabajar en la interfaz de usuario de la aplicación creando nuestros primeros componentes.
 
