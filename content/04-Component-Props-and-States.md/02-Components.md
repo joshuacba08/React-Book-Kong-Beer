@@ -184,4 +184,3 @@ Como se puede observar, hemos creado un componente `Button` que devuelve un elem
 
 En la siguiente sección vamos a aprender sobre los Props en React. Veremos cómo pasar datos a los componentes utilizando props y cómo utilizarlos dentro de los componentes. También veremos cómo utilizar props para hacer que nuestros componentes sean más reutilizables.
 
-
